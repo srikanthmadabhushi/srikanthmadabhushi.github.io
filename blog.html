@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Srikanth Madabhushi</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ---- Premium Blog Styling ---- */
+    .blog-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .blog-header {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .blog-header h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .blog-header p {
+      color: #444;
+      font-size: 15px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .blog-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #0059ff;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .blog-card a {
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .blog-desc {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .icon {
+      margin-left: 6px;
+    }
+
+    /* -------- Top Menu Styling -------- */
+    .top-menu {
+      background: #ffffff;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .top-menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .top-menu a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #000;
+      font-size: 15px;
+    }
+
+    .top-menu a.active {
+      color: #0059ff;
+      border-bottom: 2px solid #0059ff;
+      padding-bottom: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <header>
+    <img src="assets/banner.svg" class="banner" />
+  </header>
+
+  <!-- ⭐ TOP NAVIGATION MENU ⭐ -->
+  <nav class="top-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="future.html">Future 2025–2030</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="blog-container">
+    <div class="blog-header">
+      <h2>Featured Publications</h2>
+      <p>Articles published in Silicon Valley Journal, AI Journal, ENTECH Magazine and other platforms.</p>
+    </div>
+
+    <!-- ⭐ BLOG GRID ⭐ -->
+    <div class="blog-grid">
+
+      <!-- 2026 SVJ -->
+      <div class="blog-card">
+        <span class="tag">SVJ</span>
+        <a target="_blank" href="https://siliconvalleysjournal.com/2026/01/07/ai-driven-continuous-control-monitoring-transforming-enterprise-governance-risk-compliance/">
+          AI-Driven Continuous Control Monitoring: Transforming Enterprise GRC <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">A groundbreaking SVJ article on real-time governance, risk, and compliance transformation.</p>
+      </div>
+
+      <!-- AI JOURNAL - Enterprise Brain -->
+      <div class="blog-card">
+        <span class="tag">AI JOURNAL</span>
+        <a target="_blank" href="https://aijourn.com/a-multi-layer-autonomous-enterprise-brain-for-intelligent-workflow-orchestration/">
+          A Multi-Layer Autonomous Enterprise Brain for Intelligent Workflow Orchestration <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">Introducing the Autonomous Enterprise Brain — a next-gen architecture for workflow intelligence.</p>
+      </div>
+
+      <!-- Multi-Agent AI Systems -->
+      <div class="blog-card">
+        <span class="tag">SVJ</span>
+        <a target="_blank" href="https://siliconvalleysjournal.com/2025/12/23/the-rise-of-multi-agent-ai-systems-for-enterprise-workflow-automation/">
+          The Rise of Multi-Agent AI Systems for Enterprise Workflow Automation <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">Exploring scalable multi-agent models that redefine enterprise automation.</p>
+      </div>
+
+      <!-- AI Agent Architecture -->
+      <div class="blog-card">
+        <span class="tag">SVJ</span>
+        <a target="_blank" href="https://siliconvalleysjournal.com/2025/12/10/a-multi-layer-open-source-ai-agent-architecture-for-enterprise-workflow-automation/">
+          A Multi-Layer Open Source AI Agent Architecture <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">A foundational open-source AI agent model for enterprise workflow automation.</p>
+      </div>
+
+      <!-- Autonomous Workflow Intelligence -->
+      <div class="blog-card">
+        <span class="tag">SVJ</span>
+        <a target="_blank" href="https://siliconvalleysjournal.com/2025/11/19/autonomous-workflow-intelligence-a-unified-multi-domain-orchestration-model-for-modern-digital-enterprises/">
+          Autonomous Workflow Intelligence <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">A unified orchestration model enabling end-to-end autonomous enterprise workflows.</p>
+      </div>
+
+      <!-- Predictive AIOps → Generative ITSM -->
+      <div class="blog-card">
+        <span class="tag">SVJ</span>
+        <a target="_blank" href="https://siliconvalleysjournal.com/2025/11/12/from-predictive-aiops-to-generative-itsm-powering-the-silicon-valley-model-of-intelligent-enterprise/">
+          From Predictive AIOps to Generative ITSM <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">How enterprises evolve from predictive AI to fully generative operations.</p>
+      </div>
+
+      <!-- AI JOURNAL: Incident Automation -->
+      <div class="blog-card">
+        <span class="tag">AI JOURNAL</span>
+        <a target="_blank" href="https://aijourn.com/ai-driven-incident-prioritization-and-automation-building-the-future-of-intelligent-operations/">
+          AI-Driven Incident Prioritization & Automation <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">AI-powered approach to prioritizing incidents and automating resolution workflows.</p>
+      </div>
+
+      <!-- ENTECH: AI in Education -->
+      <div class="blog-card">
+        <span class="tag">ENTECH</span>
+        <a target="_blank" href="https://entechonline.com/ai-in-education-for-the-next-generation-inspiring-students-to-build-the-future/">
+          AI for the Next Generation <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">How AI shapes the future generation of innovators and problem solvers.</p>
+      </div>
+
+      <!-- ENTECH: Categorization -->
+      <div class="blog-card">
+        <span class="tag">ENTECH</span>
+        <a target="_blank" href="https://entechonline.com/ai-powered-categorization-for-problem-solving/">
+          AI-Powered Categorization for Student Problem Solving <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">Enhancing accuracy and speed of student learning with AI categorization.</p>
+      </div>
+
+      <!-- AI JOURNAL (AIOps Version) -->
+      <div class="blog-card">
+        <span class="tag">AI JOURNAL</span>
+        <a target="_blank" href="https://aijourn.com/from-predictive-aiops-to-generative-itsm-the-next-frontier-in-enterprise-automation/">
+          Predictive AIOps → Generative ITSM (AI Journal Edition) <span class="icon">↗</span>
+        </a>
+        <p class="blog-desc">The AI Journal edition exploring a deeper analysis of generative ITSM.</p>
+      </div>
+      <!-- ENTECH: (ai-knowledge-recommender) -->
+      <div class="blog-card">
+  <span class="tag">ENTECH</span>
+  <a target="_blank" href="https://entechonline.com/ai-knowledge-recommender/">
+    AI Knowledge Recommender: Enhancing Information Discovery <span class="icon">↗</span>
+  </a>
+  <p class="blog-desc">
+    An ENTECH article on building an AI-powered knowledge recommendation system that boosts discovery 
+    and relevance in enterprise knowledge bases.
+  </p>
+</div>
+       <!-- AI JOURNAL (EX360 Autonomous Enterprise AI Orchestration) -->
+      <div class="blog-card">
+  <span class="tag">AI JOURNAL</span>
+  <a target="_blank" href="https://aijourn.com/ex360-a-framework-for-autonomous-enterprise-ai-orchestration/">
+    EX360 — A Framework for Autonomous Enterprise AI Orchestration <span class="icon">↗</span>
+  </a>
+  <p class="blog-desc">An AI Journal feature on EX360, illustrating a scalable autonomous AI orchestration framework for enterprise workflows.</p>
+      </div>
+
+    </div><!-- End Grid -->
+  </div><!-- End Container -->
+
+</body>
+</html>

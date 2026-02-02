@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="408" viewBox="0 0 1900 408">
+  <defs>
+    <linearGradient id="bggrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <style>
+      .title { font-family: 'Segoe UI', Inter, Arial, sans-serif; font-size: 54px; font-weight: 800; fill: #F8FAFC; }
+      .label { font-family: Inter, Arial, sans-serif; font-size: 20px; fill: #E5F6FF; text-anchor: middle; font-weight: 400; }
+      .pill { fill: rgba(2,6,23,0.78); stroke: rgba(56,189,248,0.55); }
+      .mesh-line { stroke: rgba(203, 255, 255, 0.22); stroke-width: 1; fill: none; }
+      .mesh-node { fill: rgba(203, 255, 255, 0.30); }
+      .curve { stroke:#A7F3D0; stroke-width:3; fill:none; }
+      .node { fill:#ECFEFF; stroke:#16a34a; stroke-width:3; }
+      .leader { stroke:#9dd9c7; stroke-width:2; }
+    </style>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="1900" height="408" fill="url(#bggrad)"/>
+
+  <!-- Subtle mesh background -->
+  <g opacity="0.6">
+    <path class="mesh-line" d="M200,120 L600,80 L1000,150 L1400,100 L1800,130"/>
+    <path class="mesh-line" d="M200,300 L600,250 L1000,280 L1400,260 L1800,300"/>
+    <circle class="mesh-node" cx="350" cy="100" r="2.5"/>
+    <circle class="mesh-node" cx="800" cy="140" r="2.5"/>
+    <circle class="mesh-node" cx="1250" cy="120" r="2.5"/>
+    <circle class="mesh-node" cx="1650" cy="110" r="2.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="120" y="110" class="title">ServiceNow + AI</text>
+
+  <!-- Curve -->
+  <path d="M200,200 C420,120 740,280 1060,150 C1280,80 1540,220 1820,140" class="curve"/>
+<line x1="220" y1="218" x2="220" y2="232" class="leader"/>
+<circle cx="220" cy="210" r="8" class="node"/>
+<rect x="139.0" y="232.0" rx="14" ry="14" width="162.0" height="36" class="pill"/>
+<text x="220" y="255" class="label">Flow Designer</text>
+<line x1="500" y1="188" x2="500" y2="202" class="leader"/>
+<circle cx="500" cy="180" r="8" class="node"/>
+<rect x="389.0" y="202.0" rx="14" ry="14" width="222.0" height="36" class="pill"/>
+<text x="500" y="225" class="label">IntegrationHub/APIs</text>
+<line x1="780" y1="238" x2="780" y2="252" class="leader"/>
+<circle cx="780" cy="230" r="8" class="node"/>
+<rect x="649.0" y="252.0" rx="14" ry="14" width="262.0" height="36" class="pill"/>
+<text x="780" y="275" class="label">Predictive Intelligence</text>
+<line x1="1060" y1="168" x2="1060" y2="182" class="leader"/>
+<circle cx="1060" cy="160" r="8" class="node"/>
+<rect x="959.0" y="182.0" rx="14" ry="14" width="202.0" height="36" class="pill"/>
+<text x="1060" y="205" class="label">Agentic Workflows</text>
+<line x1="1340" y1="218" x2="1340" y2="232" class="leader"/>
+<circle cx="1340" cy="210" r="8" class="node"/>
+<rect x="1259.0" y="232.0" rx="14" ry="14" width="162.0" height="36" class="pill"/>
+<text x="1340" y="255" class="label">Generative AI</text>
+<line x1="1620" y1="188" x2="1620" y2="202" class="leader"/>
+<circle cx="1620" cy="180" r="8" class="node"/>
+<rect x="1550.0" y="202.0" rx="14" ry="14" width="140.0" height="36" class="pill"/>
+<text x="1620" y="225" class="label">Agentic AI</text>
+<line x1="1800" y1="158" x2="1800" y2="172" class="leader"/>
+<circle cx="1800" cy="150" r="8" class="node"/>
+<rect x="1730.0" y="172.0" rx="14" ry="14" width="140.0" height="36" class="pill"/>
+<text x="1800" y="195" class="label">AIOps</text>
+
+  <!-- Cube -->
+  <g transform="translate(1720, 80)" opacity="0.35">
+    <polygon points="0,40 40,20 80,40 40,60" fill="#0ea5e9"/>
+    <polygon points="40,20 80,40 80,80 40,60" fill="#22c55e" opacity="0.6"/>
+    <polygon points="0,40 40,60 40,100 0,80" fill="#22c55e" opacity="0.4"/>
+  </g>
+
+  <!-- Logos -->
+  <g transform="translate(120,36)" opacity="0.15">
+    <text font-family="Segoe UI" font-size="28" fill="#ffffff">servicenow</text>
+  </g>
+  <g transform="translate(1640, 80)" opacity="0.18">
+    <circle cx="36" cy="36" r="26" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M36,10 L36,62 M10,36 L62,36" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="36" cy="20" r="3" fill="#ffffff"/>
+    <circle cx="20" cy="36" r="3" fill="#ffffff"/>
+    <circle cx="52" cy="36" r="3" fill="#ffffff"/>
+    <circle cx="36" cy="52" r="3" fill="#ffffff"/>
+  </g>
+</svg>
