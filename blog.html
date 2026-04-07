@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css" />
 
   <style>
-    /* ---- Premium Blog Styling ---- */
     .blog-container {
       max-width: 1100px;
       margin: auto;
@@ -23,11 +22,6 @@
     .blog-header h2 {
       font-size: 32px;
       font-weight: 700;
-    }
-
-    .blog-header p {
-      color: #444;
-      font-size: 15px;
     }
 
     .blog-grid {
@@ -48,12 +42,6 @@
       border-radius: 12px;
       border: 1px solid #e5e5e5;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .blog-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
     }
 
     .tag {
@@ -79,11 +67,6 @@
       color: #444;
     }
 
-    .icon {
-      margin-left: 6px;
-    }
-
-    /* -------- Top Menu Styling -------- */
     .top-menu {
       background: #ffffff;
       padding: 12px 0;
@@ -103,235 +86,97 @@
       text-decoration: none;
       font-weight: 600;
       color: #000;
-      font-size: 15px;
     }
 
     .top-menu a.active {
       color: #0059ff;
       border-bottom: 2px solid #0059ff;
-      padding-bottom: 3px;
+    }
+
+    h2.section-title {
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Banner -->
-  <header>
-    <img src="assets/banner.svg" class="banner" />
-  </header>
+<header>
+  <img src="assets/banner.svg" class="banner" />
+</header>
 
-  <!-- ⭐ TOP NAVIGATION MENU ⭐ -->
-  <nav class="top-menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="future.html">Future 2025–2030</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="top-menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="future.html">Future 2025–2030</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <div class="blog-container">
-    <div class="blog-header">
-      <h2>Featured Publications</h2>
-      <p>Articles published in Silicon Valley Journal, AI Journal, ENTECH Magazine and other platforms.</p>
-    </div>
+<div class="blog-container">
+  <div class="blog-header">
+    <h2>Featured Publications</h2>
+  </div>
 
-    <!-- ⭐ BLOG GRID ⭐ -->
-    <div class="blog-grid">
+  <!-- ================= SVJ ================= -->
+  <h2 class="section-title">Silicon Valley Journal</h2>
+  <div class="blog-grid">
 
-      <!-- 2026 SVJ -->
-      <div class="blog-card">
-        <span class="tag">SVJ</span>
-        <a target="_blank" href="https://siliconvalleysjournal.com/2026/01/07/ai-driven-continuous-control-monitoring-transforming-enterprise-governance-risk-compliance/">
-          AI-Driven Continuous Control Monitoring: Transforming Enterprise GRC <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">A groundbreaking SVJ article on real-time governance, risk, and compliance transformation.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/04/02/from-signals-to-support-ai-driven-employee-sentiment-monitoring-and-proactive-hr-intervention/">Employee Sentiment Monitoring ↗</a><p class="blog-desc">AI-driven HR sentiment intelligence.</p></div>
 
-      <!-- AI JOURNAL - Enterprise Brain -->
-      <div class="blog-card">
-        <span class="tag">AI JOURNAL</span>
-        <a target="_blank" href="https://aijourn.com/a-multi-layer-autonomous-enterprise-brain-for-intelligent-workflow-orchestration/">
-          A Multi-Layer Autonomous Enterprise Brain for Intelligent Workflow Orchestration <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">Introducing the Autonomous Enterprise Brain — a next-gen architecture for workflow intelligence.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/03/06/intelligent-employee-experience-ai-driven-request-classification-and-smart-routing-in-hr-service-delivery/">Intelligent Employee Experience ↗</a><p class="blog-desc">AI-driven HR routing.</p></div>
 
-      <!-- Multi-Agent AI Systems -->
-      <div class="blog-card">
-        <span class="tag">SVJ</span>
-        <a target="_blank" href="https://siliconvalleysjournal.com/2025/12/23/the-rise-of-multi-agent-ai-systems-for-enterprise-workflow-automation/">
-          The Rise of Multi-Agent AI Systems for Enterprise Workflow Automation <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">Exploring scalable multi-agent models that redefine enterprise automation.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/02/10/empathy-at-scale-ai-enhanced-sentiment-detection-and-automated-response-generation-in-modern-customer-service/">Empathy at Scale ↗</a><p class="blog-desc">AI-powered customer sentiment.</p></div>
 
-      <!-- AI Agent Architecture -->
-      <div class="blog-card">
-        <span class="tag">SVJ</span>
-        <a target="_blank" href="https://siliconvalleysjournal.com/2025/12/10/a-multi-layer-open-source-ai-agent-architecture-for-enterprise-workflow-automation/">
-          A Multi-Layer Open Source AI Agent Architecture <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">A foundational open-source AI agent model for enterprise workflow automation.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/01/07/ai-driven-continuous-control-monitoring-transforming-enterprise-governance-risk-compliance/">Control Monitoring ↗</a><p class="blog-desc">AI for GRC automation.</p></div>
 
-      <!-- Autonomous Workflow Intelligence -->
-      <div class="blog-card">
-        <span class="tag">SVJ</span>
-        <a target="_blank" href="https://siliconvalleysjournal.com/2025/11/19/autonomous-workflow-intelligence-a-unified-multi-domain-orchestration-model-for-modern-digital-enterprises/">
-          Autonomous Workflow Intelligence <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">A unified orchestration model enabling end-to-end autonomous enterprise workflows.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/12/23/the-rise-of-multi-agent-ai-systems-for-enterprise-workflow-automation/">Multi-Agent AI ↗</a><p class="blog-desc">Enterprise AI orchestration.</p></div>
 
-      <!-- Predictive AIOps → Generative ITSM -->
-      <div class="blog-card">
-        <span class="tag">SVJ</span>
-        <a target="_blank" href="https://siliconvalleysjournal.com/2025/11/12/from-predictive-aiops-to-generative-itsm-powering-the-silicon-valley-model-of-intelligent-enterprise/">
-          From Predictive AIOps to Generative ITSM <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">How enterprises evolve from predictive AI to fully generative operations.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/12/10/a-multi-layer-open-source-ai-agent-architecture-for-enterprise-workflow-automation/">AI Agent Architecture ↗</a><p class="blog-desc">AI agent design.</p></div>
 
-      <!-- AI JOURNAL: Incident Automation -->
-      <div class="blog-card">
-        <span class="tag">AI JOURNAL</span>
-        <a target="_blank" href="https://aijourn.com/ai-driven-incident-prioritization-and-automation-building-the-future-of-intelligent-operations/">
-          AI-Driven Incident Prioritization & Automation <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">AI-powered approach to prioritizing incidents and automating resolution workflows.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/11/19/autonomous-workflow-intelligence-a-unified-multi-domain-orchestration-model-for-modern-digital-enterprises/">Workflow Intelligence ↗</a><p class="blog-desc">Autonomous workflows.</p></div>
 
-      <!-- ENTECH: AI in Education -->
-      <div class="blog-card">
-        <span class="tag">ENTECH</span>
-        <a target="_blank" href="https://entechonline.com/ai-in-education-for-the-next-generation-inspiring-students-to-build-the-future/">
-          AI for the Next Generation <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">How AI shapes the future generation of innovators and problem solvers.</p>
-      </div>
+    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/11/12/from-predictive-aiops-to-generative-itsm-powering-the-silicon-valley-model-of-intelligent-enterprise/">Generative ITSM ↗</a><p class="blog-desc">AI-driven ITSM evolution.</p></div>
 
-      <!-- ENTECH: Categorization -->
-      <div class="blog-card">
-        <span class="tag">ENTECH</span>
-        <a target="_blank" href="https://entechonline.com/ai-powered-categorization-for-problem-solving/">
-          AI-Powered Categorization for Student Problem Solving <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">Enhancing accuracy and speed of student learning with AI categorization.</p>
-      </div>
+  </div>
 
-      <!-- AI JOURNAL (AIOps Version) -->
-      <div class="blog-card">
-        <span class="tag">AI JOURNAL</span>
-        <a target="_blank" href="https://aijourn.com/from-predictive-aiops-to-generative-itsm-the-next-frontier-in-enterprise-automation/">
-          Predictive AIOps → Generative ITSM (AI Journal Edition) <span class="icon">↗</span>
-        </a>
-        <p class="blog-desc">The AI Journal edition exploring a deeper analysis of generative ITSM.</p>
-      </div>
-      <!-- ENTECH: (ai-knowledge-recommender) -->
-      <div class="blog-card">
-  <span class="tag">ENTECH</span>
-  <a target="_blank" href="https://entechonline.com/ai-knowledge-recommender/">
-    AI Knowledge Recommender: Enhancing Information Discovery <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    An ENTECH article on building an AI-powered knowledge recommendation system that boosts discovery 
-    and relevance in enterprise knowledge bases.
-  </p>
+  <!-- ================= AI JOURNAL ================= -->
+  <h2 class="section-title">AI Journal</h2>
+  <div class="blog-grid">
+
+    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/a-multi-layer-autonomous-enterprise-brain-for-intelligent-workflow-orchestration/">Enterprise Brain ↗</a><p class="blog-desc">Enterprise orchestration model.</p></div>
+
+    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/ex360-a-framework-for-autonomous-enterprise-ai-orchestration/">EX360 ↗</a><p class="blog-desc">AI orchestration framework.</p></div>
+
+    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/ex360-airr-a-framework-for-autonomous-ai-risk-governance-compliance/">EX360-AIRR ↗</a><p class="blog-desc">AI governance model.</p></div>
+
+    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/autonomous-customer-issue-triage-resolution-orchestration-a-modern-framework-for-scalable-customer-service/">Customer Orchestration ↗</a><p class="blog-desc">AI customer workflows.</p></div>
+
+    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/preventing-customer-churn-with-ai-predictive-retention-signals-in-modern-service-workflows/">Customer Churn ↗</a><p class="blog-desc">AI retention models.</p></div>
+
+    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/from-predictive-aiops-to-generative-itsm-the-next-frontier-in-enterprise-automation/">AI ITSM ↗</a><p class="blog-desc">Automation evolution.</p></div>
+
+  </div>
+
+  <!-- ================= ENTECH ================= -->
+  <h2 class="section-title">ENTECH Magazine</h2>
+  <div class="blog-grid">
+
+    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/ai-knowledge-recommender/">Knowledge Recommender ↗</a><p class="blog-desc">AI knowledge discovery.</p></div>
+
+    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/predictive-routing-how-ai-chooses-the-right/">Predictive Routing ↗</a><p class="blog-desc">AI routing intelligence.</p></div>
+
+    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/sla-priority-management-how-ai-handles-it-urgency/">SLA Priority ↗</a><p class="blog-desc">AI SLA management.</p></div>
+
+    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/ai-in-education-for-the-next-generation-inspiring-students-to-build-the-future/">AI Education ↗</a><p class="blog-desc">AI for students.</p></div>
+
+    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/ai-powered-categorization-for-problem-solving/">AI Categorization ↗</a><p class="blog-desc">AI classification models.</p></div>
+
+  </div>
+
 </div>
-       <!-- AI JOURNAL (EX360 Autonomous Enterprise AI Orchestration) -->
-      <div class="blog-card">
-  <span class="tag">AI JOURNAL</span>
-  <a target="_blank" href="https://aijourn.com/ex360-a-framework-for-autonomous-enterprise-ai-orchestration/">
-    EX360 — A Framework for Autonomous Enterprise AI Orchestration <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">An AI Journal feature on EX360, illustrating a scalable autonomous AI orchestration framework for enterprise workflows.</p>
-      </div>
-      <div class="blog-card">
-  <span class="tag">SVJ</span>
-  <a target="_blank" href="https://siliconvalleysjournal.com/2026/02/10/empathy-at-scale-ai-enhanced-sentiment-detection-and-automated-response-generation-in-modern-customer-service/">
-    Empathy at Scale: AI-Enhanced Sentiment Detection & Automated Response Generation <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    A Silicon Valley Journal article exploring how next-generation AI models deliver empathetic, 
-    sentiment-aware automated responses in modern customer service environments.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">AI JOURNAL</span>
-  <a target="_blank" href="https://aijourn.com/ex360-airr-a-framework-for-autonomous-ai-risk-governance-compliance/">
-    EX360-AIRR: A Framework for Autonomous AI Risk, Governance & Compliance <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    An AI Journal feature introducing EX360-AIRR, a multi-layer framework designed for 
-    autonomous AI-driven risk governance, compliance monitoring, and control automation.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">AI JOURNAL</span>
-  <a target="_blank" href="https://aijourn.com/autonomous-customer-issue-triage-resolution-orchestration-a-modern-framework-for-scalable-customer-service/">
-    Autonomous Customer Issue Triage & Resolution Orchestration <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    An AI Journal feature introducing a scalable autonomous framework for customer issue triage, 
-    intelligent routing, and resolution workflow orchestration using AI-driven logic.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">ENTECH</span>
-  <a target="_blank" href="https://entechonline.com/sla-priority-management-how-ai-handles-it-urgency/">
-    SLA Priority Management: How AI Handles IT Urgency <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    An ENTECH article explaining how AI-powered prioritization models help IT teams manage SLA urgency, 
-    classify risk levels, and respond faster with intelligent workflows.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">SVJ</span>
-  <a target="_blank" href="https://siliconvalleysjournal.com/2026/04/02/from-signals-to-support-ai-driven-employee-sentiment-monitoring-and-proactive-hr-intervention/">
-    From Signals to Support: AI-Driven Employee Sentiment Monitoring & Proactive HR Intervention <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    A Silicon Valley Journal article on how AI-driven sentiment monitoring enables proactive HR intervention, 
-    improving employee experience and reducing attrition through early signal detection.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">ENTECH</span>
-  <a target="_blank" href="https://entechonline.com/predictive-routing-how-ai-chooses-the-right/">
-    Predictive Routing: How AI Chooses the Right Path <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    An ENTECH article explaining how AI-powered predictive routing selects optimal paths for requests, 
-    improving efficiency, resolution speed, and user experience.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">AI JOURNAL</span>
-  <a target="_blank" href="https://aijourn.com/preventing-customer-churn-with-ai-predictive-retention-signals-in-modern-service-workflows/">
-    Preventing Customer Churn with AI: Predictive Retention Signals <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    An AI Journal feature on leveraging predictive signals and AI-driven insights to identify churn risks 
-    early and enable proactive customer retention strategies.
-  </p>
-</div>
-      <div class="blog-card">
-  <span class="tag">SVJ</span>
-  <a target="_blank" href="https://siliconvalleysjournal.com/2026/03/06/intelligent-employee-experience-ai-driven-request-classification-and-smart-routing-in-hr-service-delivery/">
-    Intelligent Employee Experience: AI-Driven Request Classification & Smart Routing <span class="icon">↗</span>
-  </a>
-  <p class="blog-desc">
-    A Silicon Valley Journal article on using AI for request classification and smart routing to enhance 
-    HR service delivery and employee experience.
-  </p>
-</div>
-
-    </div><!--End Grid -->
-  </div><!-- End Container -->
 
 </body>
 </html>
