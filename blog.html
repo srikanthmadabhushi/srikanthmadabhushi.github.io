@@ -1,180 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog – Srikanth Madabhushi</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog – Srikanth Madabhushi</title>
+<link rel="stylesheet" href="styles.css">
 
-  <style>
-    .blog-container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .blog-header {
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-
-    .blog-header h2 {
-      font-size: 32px;
-      font-weight: 700;
-    }
-
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
-
-    @media (max-width: 768px) {
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .blog-card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 12px;
-      border: 1px solid #e5e5e5;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-    }
-
-    .tag {
-      display: inline-block;
-      background: #0059ff;
-      color: #fff;
-      padding: 3px 10px;
-      border-radius: 6px;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-
-    .blog-card a {
-      font-size: 18px;
-      font-weight: 600;
-      text-decoration: none;
-      color: #000;
-    }
-
-    .blog-desc {
-      margin-top: 8px;
-      font-size: 14px;
-      color: #444;
-    }
-
-    .top-menu {
-      background: #ffffff;
-      padding: 12px 0;
-      border-bottom: 1px solid #e5e5e5;
-    }
-
-    .top-menu ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 0;
-      margin: 0;
-    }
-
-    .top-menu a {
-      text-decoration: none;
-      font-weight: 600;
-      color: #000;
-    }
-
-    .top-menu a.active {
-      color: #0059ff;
-      border-bottom: 2px solid #0059ff;
-    }
-
-    h2.section-title {
-      margin-top: 40px;
-    }
-  </style>
+<style>
+.blog-container {max-width:1100px;margin:auto;padding:20px;}
+.blog-grid {display:grid;grid-template-columns:repeat(2,1fr);gap:25px;}
+@media(max-width:768px){.blog-grid{grid-template-columns:1fr;}}
+.blog-card{background:#fff;padding:20px;border-radius:12px;border:1px solid #e5e5e5;box-shadow:0 4px 18px rgba(0,0,0,0.08);}
+.tag{display:inline-block;background:#0059ff;color:#fff;padding:3px 10px;border-radius:6px;font-size:12px;margin-bottom:10px;}
+.blog-card a{font-size:18px;font-weight:600;text-decoration:none;color:#000;}
+.blog-desc{margin-top:8px;font-size:14px;color:#444;}
+.top-menu{background:#fff;padding:12px 0;border-bottom:1px solid #e5e5e5;}
+.top-menu ul{list-style:none;display:flex;justify-content:center;gap:25px;padding:0;margin:0;}
+.top-menu a{text-decoration:none;font-weight:600;color:#000;}
+.top-menu a.active{color:#0059ff;border-bottom:2px solid #0059ff;}
+h2{margin-top:40px;}
+</style>
 </head>
 
 <body>
 
 <header>
-  <img src="assets/banner.svg" class="banner" />
+<img src="assets/banner.svg" class="banner">
 </header>
 
 <nav class="top-menu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="future.html">Future 2025–2030</a></li>
-    <li><a href="blog.html" class="active">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="future.html">Future 2025–2030</a></li>
+<li><a href="blog.html" class="active">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
 
 <div class="blog-container">
-  <div class="blog-header">
-    <h2>Featured Publications</h2>
-  </div>
 
-  <!-- ================= SVJ ================= -->
-  <h2 class="section-title">Silicon Valley Journal</h2>
-  <div class="blog-grid">
+<h2>Silicon Valley Journal</h2>
+<div class="blog-grid">
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/04/02/from-signals-to-support-ai-driven-employee-sentiment-monitoring-and-proactive-hr-intervention/">Employee Sentiment Monitoring ↗</a><p class="blog-desc">AI-driven HR sentiment intelligence.</p></div>
+<div class="blog-card">
+<span class="tag">SVJ</span>
+<a target="_blank" href="https://siliconvalleysjournal.com/2026/04/02/from-signals-to-support-ai-driven-employee-sentiment-monitoring-and-proactive-hr-intervention/">
+Employee Sentiment Monitoring ↗</a>
+<p class="blog-desc">Explores AI-driven sentiment detection using behavioral signals. Enables proactive HR intervention and improves employee experience.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/03/06/intelligent-employee-experience-ai-driven-request-classification-and-smart-routing-in-hr-service-delivery/">Intelligent Employee Experience ↗</a><p class="blog-desc">AI-driven HR routing.</p></div>
+<div class="blog-card">
+<span class="tag">SVJ</span>
+<a target="_blank" href="https://siliconvalleysjournal.com/2026/03/06/intelligent-employee-experience-ai-driven-request-classification-and-smart-routing-in-hr-service-delivery/">
+Intelligent Employee Experience ↗</a>
+<p class="blog-desc">Focuses on AI-based request classification and routing. Enhances HR service delivery efficiency and employee satisfaction.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/02/10/empathy-at-scale-ai-enhanced-sentiment-detection-and-automated-response-generation-in-modern-customer-service/">Empathy at Scale ↗</a><p class="blog-desc">AI-powered customer sentiment.</p></div>
+<div class="blog-card">
+<span class="tag">SVJ</span>
+<a target="_blank" href="https://siliconvalleysjournal.com/2026/02/10/empathy-at-scale-ai-enhanced-sentiment-detection-and-automated-response-generation-in-modern-customer-service/">
+Empathy at Scale ↗</a>
+<p class="blog-desc">Demonstrates how AI delivers sentiment-aware responses. Improves customer engagement and automated support systems.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2026/01/07/ai-driven-continuous-control-monitoring-transforming-enterprise-governance-risk-compliance/">Control Monitoring ↗</a><p class="blog-desc">AI for GRC automation.</p></div>
+</div>
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/12/23/the-rise-of-multi-agent-ai-systems-for-enterprise-workflow-automation/">Multi-Agent AI ↗</a><p class="blog-desc">Enterprise AI orchestration.</p></div>
+<h2>AI Journal</h2>
+<div class="blog-grid">
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/12/10/a-multi-layer-open-source-ai-agent-architecture-for-enterprise-workflow-automation/">AI Agent Architecture ↗</a><p class="blog-desc">AI agent design.</p></div>
+<div class="blog-card">
+<span class="tag">AI JOURNAL</span>
+<a target="_blank" href="https://aijourn.com/ex360-a-framework-for-autonomous-enterprise-ai-orchestration/">
+EX360 Framework ↗</a>
+<p class="blog-desc">Introduces a scalable AI orchestration framework. Enables autonomous enterprise workflow execution.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/11/19/autonomous-workflow-intelligence-a-unified-multi-domain-orchestration-model-for-modern-digital-enterprises/">Workflow Intelligence ↗</a><p class="blog-desc">Autonomous workflows.</p></div>
+<div class="blog-card">
+<span class="tag">AI JOURNAL</span>
+<a target="_blank" href="https://aijourn.com/preventing-customer-churn-with-ai-predictive-retention-signals-in-modern-service-workflows/">
+Customer Churn Prediction ↗</a>
+<p class="blog-desc">Explains predictive AI models for retention. Helps organizations reduce churn proactively.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">SVJ</span><a target="_blank" href="https://siliconvalleysjournal.com/2025/11/12/from-predictive-aiops-to-generative-itsm-powering-the-silicon-valley-model-of-intelligent-enterprise/">Generative ITSM ↗</a><p class="blog-desc">AI-driven ITSM evolution.</p></div>
+</div>
 
-  </div>
+<h2>ENTECH Magazine</h2>
+<div class="blog-grid">
 
-  <!-- ================= AI JOURNAL ================= -->
-  <h2 class="section-title">AI Journal</h2>
-  <div class="blog-grid">
+<div class="blog-card">
+<span class="tag">ENTECH</span>
+<a target="_blank" href="https://entechonline.com/ai-knowledge-recommender/">
+Knowledge Recommender ↗</a>
+<p class="blog-desc">AI-based recommendation engine for enterprise knowledge. Improves search and discovery accuracy.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/a-multi-layer-autonomous-enterprise-brain-for-intelligent-workflow-orchestration/">Enterprise Brain ↗</a><p class="blog-desc">Enterprise orchestration model.</p></div>
+<div class="blog-card">
+<span class="tag">ENTECH</span>
+<a target="_blank" href="https://entechonline.com/sla-priority-management-how-ai-handles-it-urgency/">
+SLA Priority Management ↗</a>
+<p class="blog-desc">AI models optimize SLA prioritization. Enables faster incident handling and response.</p>
+</div>
 
-    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/ex360-a-framework-for-autonomous-enterprise-ai-orchestration/">EX360 ↗</a><p class="blog-desc">AI orchestration framework.</p></div>
-
-    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/ex360-airr-a-framework-for-autonomous-ai-risk-governance-compliance/">EX360-AIRR ↗</a><p class="blog-desc">AI governance model.</p></div>
-
-    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/autonomous-customer-issue-triage-resolution-orchestration-a-modern-framework-for-scalable-customer-service/">Customer Orchestration ↗</a><p class="blog-desc">AI customer workflows.</p></div>
-
-    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/preventing-customer-churn-with-ai-predictive-retention-signals-in-modern-service-workflows/">Customer Churn ↗</a><p class="blog-desc">AI retention models.</p></div>
-
-    <div class="blog-card"><span class="tag">AI JOURNAL</span><a target="_blank" href="https://aijourn.com/from-predictive-aiops-to-generative-itsm-the-next-frontier-in-enterprise-automation/">AI ITSM ↗</a><p class="blog-desc">Automation evolution.</p></div>
-
-  </div>
-
-  <!-- ================= ENTECH ================= -->
-  <h2 class="section-title">ENTECH Magazine</h2>
-  <div class="blog-grid">
-
-    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/ai-knowledge-recommender/">Knowledge Recommender ↗</a><p class="blog-desc">AI knowledge discovery.</p></div>
-
-    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/predictive-routing-how-ai-chooses-the-right/">Predictive Routing ↗</a><p class="blog-desc">AI routing intelligence.</p></div>
-
-    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/sla-priority-management-how-ai-handles-it-urgency/">SLA Priority ↗</a><p class="blog-desc">AI SLA management.</p></div>
-
-    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/ai-in-education-for-the-next-generation-inspiring-students-to-build-the-future/">AI Education ↗</a><p class="blog-desc">AI for students.</p></div>
-
-    <div class="blog-card"><span class="tag">ENTECH</span><a target="_blank" href="https://entechonline.com/ai-powered-categorization-for-problem-solving/">AI Categorization ↗</a><p class="blog-desc">AI classification models.</p></div>
-
-  </div>
+</div>
 
 </div>
 
