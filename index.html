@@ -6,18 +6,54 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
-.profile-block { display:flex; align-items:flex-start; gap:20px; margin:40px 0; }
-.profile-block img { width:180px; border-radius:50%; }
-.profile-text { flex:1; }
-.hero { padding-top:95px; }
+body { text-align:center; }
 
-.highlight-box {
-  background:#f5f8ff;
-  padding:20px;
-  border-radius:10px;
+.hero { padding-top:100px; }
+.hero img { max-width:100%; }
+
+.profile-img {
+  width:160px;
+  border-radius:50%;
+  margin-top:30px;
+}
+
+h1 {
+  font-size:36px;
   margin-top:20px;
 }
 
+.subtitle {
+  font-size:18px;
+  color:#555;
+  margin-top:10px;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.section {
+  margin-top:80px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+.card {
+  text-align:left;
+}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;}
+}
 </style>
 </head>
 
@@ -26,95 +62,70 @@
 <nav class="top-nav">
   <a href="index.html">Home</a>
   <a href="projects.html">Projects</a>
-  <a href="future.html">AI Vision 2025–2030</a>
+  <a href="future.html">AI Vision</a>
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <img src="assets/banner.svg">
+  
+  <img src="assets/profile.png" class="profile-img">
+
+  <h1>AI + ServiceNow Architect</h1>
+
+  <p class="subtitle">
+  Designing autonomous enterprise systems using Generative AI, AIOps, and multi-agent orchestration.
+  </p>
 </section>
-
-<section class="container section">
-
-<div class="profile-block">
-  <img src="assets/profile.png">
-  <div class="profile-text">
-    <h1>AI-Driven ServiceNow Architect</h1>
-    <p><strong>Designing Autonomous Enterprise Systems using Generative AI, AIOps, and Multi-Agent Orchestration</strong></p>
-  </div>
-</div>
-
-<!-- HERO HIGHLIGHT -->
-<div class="highlight-box">
-<h2>Designing Autonomous Enterprise Systems</h2>
-<p>Combining ServiceNow, Generative AI, and Multi-Agent Orchestration to build intelligent, self-healing enterprise workflows.</p>
-</div>
-
-<!-- WHAT I BRING -->
-<h2>What I Bring</h2>
-<div class="grid">
-  <article class="card"><h4>AI + ServiceNow Architecture</h4><p>End-to-end intelligent workflow design</p></article>
-  <article class="card"><h4>GenAI & Agentic AI</h4><p>Autonomous agents and decision systems</p></article>
-  <article class="card"><h4>Enterprise Use Cases</h4><p>ITSM, HRSD, ITOM, GRC solutions</p></article>
-</div>
-
-<!-- PUBLISHED IN -->
-<h2>Published In</h2>
-<div class="grid">
-  <article class="card"><h4>Silicon Valley Journal</h4></article>
-  <article class="card"><h4>AI Journal</h4></article>
-  <article class="card"><h4>ENTECH Magazine</h4></article>
-</div>
 
 <!-- FEATURED PROJECTS -->
-<h2>Featured Projects</h2>
+<section class="section">
+  <h2>Featured Work</h2>
 
-<div class="grid">
+  <div class="grid">
 
-  <article class="card">
-    <img src="assets/Autonomous-Enterprise-Brain-AEB.png">
-    <h3>Autonomous Enterprise Brain (AEB)</h3>
-    <p>Autonomous AI-driven decision engine enabling self-healing enterprise workflows.</p>
-  </article>
+    <div class="card">
+      <img src="assets/Autonomous-Enterprise-Brain-AEB.png">
+      <h3>Autonomous Enterprise Brain</h3>
+      <p>AI decision engine enabling self-healing enterprise workflows.</p>
+    </div>
 
-  <article class="card">
-    <img src="assets/AI-Orchestrated-Enterprise-Suite.png">
-    <h3>EX360 – AI-Orchestrated Enterprise Suite</h3>
-    <p>Unified orchestration platform connecting workflows, agents, and enterprise operations.</p>
-  </article>
+    <div class="card">
+      <img src="assets/AI-Orchestrated-Enterprise-Suite.png">
+      <h3>EX360 Enterprise Suite</h3>
+      <p>Unified orchestration across enterprise workflows and AI agents.</p>
+    </div>
 
-  <article class="card">
-    <img src="assets/ServiceNow-Digital-Twin-Intelligence.png">
-    <h3>Digital Twin Intelligence</h3>
-    <p>Real-time simulation engine enabling predictive insights and proactive operations.</p>
-  </article>
+    <div class="card">
+      <img src="assets/ServiceNow-Digital-Twin-Intelligence.png">
+      <h3>Digital Twin Intelligence</h3>
+      <p>Predictive simulation engine for enterprise operations.</p>
+    </div>
 
-</div>
-
-<!-- ABOUT -->
-<h2>About Me</h2>
-
-<p>
-I design intelligent enterprise workflows combining <strong>ServiceNow</strong>, 
-<strong>Generative AI</strong>, and <strong>predictive automation</strong>.
-</p>
-
-<p>
-My focus is building <strong>autonomous, scalable, and data-driven enterprise systems</strong> 
-across ITSM, ITOM, HRSD, CSM, and GRC domains.
-</p>
-
-<!-- CURRENT FOCUS -->
-<h3>Current Focus</h3>
-<p>
-Specializing in <strong>Generative AI, Agentic AI systems, and enterprise automation</strong> 
-to shape the future of autonomous enterprise operations.
-</p>
-
+  </div>
 </section>
 
-<footer class="container footer">
+<!-- ABOUT -->
+<section class="section">
+  <h2>About</h2>
+
+  <p class="subtitle">
+  I build intelligent enterprise workflows combining ServiceNow with AI-driven automation and predictive intelligence.
+  </p>
+</section>
+
+<!-- AUTHORITY -->
+<section class="section">
+  <h2>Published In</h2>
+
+  <p class="subtitle">
+  Silicon Valley Journal • AI Journal • ENTECH Magazine
+  </p>
+</section>
+
+<footer class="section">
   <p>© 2026 Srikanth Madabhushi</p>
 </footer>
 
