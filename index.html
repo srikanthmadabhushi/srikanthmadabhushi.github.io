@@ -19,7 +19,7 @@
   margin-top:20px;
 }
 
-/* DARK THEME FIX */
+/* DARK THEME */
 .section-block {
   background:#0f172a;
   padding:25px;
@@ -50,22 +50,55 @@
 }
 
 /* TEXT */
-h1, h2, h3, h4 {
-  color:#ffffff;
-}
-
-p {
-  color:#cbd5f5;
-  line-height:1.6;
-}
-
-ul {
-  color:#cbd5f5;
-}
+h1, h2, h3, h4 { color:#ffffff; }
+p, ul { color:#cbd5f5; line-height:1.6; }
 
 h2 { margin-top:50px; margin-bottom:10px; }
 h3 { margin-top:30px; }
 
+/* ===== NEW HERO STORY ===== */
+.hero-story { margin:40px 0; }
+
+.hero-sub {
+  color:#6366f1;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.hero-desc {
+  color:#94a3b8;
+  max-width:750px;
+}
+
+/* ===== TAGS ===== */
+.tag {
+  display:inline-block;
+  padding:4px 10px;
+  font-size:11px;
+  border-radius:20px;
+  margin-right:5px;
+  margin-top:8px;
+  color:#fff;
+  font-weight:600;
+}
+
+.tag.ai { background:#6366f1; }
+.tag.auto { background:#f59e0b; }
+.tag.aiops { background:#ef4444; }
+
+/* ===== ARCHITECTURE ===== */
+.architecture { margin:50px 0; }
+
+.arch-desc {
+  color:#94a3b8;
+  margin-bottom:15px;
+}
+
+.arch-img {
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.4);
+}
 </style>
 
 </head>
@@ -92,6 +125,41 @@ h3 { margin-top:30px; }
     <h1>Srikanth Madabhushi — ServiceNow + AI Engineer | Enterprise Workflow Architect</h1>
   </div>
 </div>
+
+<!-- 🔥 NEW STORYTELLING SECTION -->
+<section class="hero-story">
+
+<h2>Building Intelligent Enterprise Systems with ServiceNow & AI</h2>
+
+<p class="hero-sub">
+Designing scalable workflows powered by automation, AI, and enterprise data.
+</p>
+
+<p class="hero-desc">
+I specialize in building intelligent enterprise systems across ITSM, ITOM, HRSD, CSM, and GRC.
+My approach focuses on combining ServiceNow workflows with AI-driven automation, predictive insights, and data-driven decision making to create autonomous, scalable enterprise platforms.
+</p>
+
+<div>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
+<span class="tag aiops">AIOps</span>
+</div>
+
+</section>
+
+<!-- 🔥 NEW ARCHITECTURE SECTION -->
+<section class="architecture">
+
+<h2>Enterprise AI Architecture</h2>
+
+<p class="arch-desc">
+A unified architecture integrating ServiceNow workflows, AI intelligence, and enterprise data systems to enable autonomous operations.
+</p>
+
+<img src="assets/enterprise-ai-architecture.png" class="arch-img">
+
+</section>
 
 <!-- WHAT I BRING -->
 <div class="section-block">
