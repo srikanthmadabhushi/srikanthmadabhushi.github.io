@@ -86,18 +86,23 @@ h3 { margin-top:30px; }
 .tag.auto { background:#f59e0b; }
 .tag.aiops { background:#ef4444; }
 
-/* ===== ARCHITECTURE ===== */
-.architecture { margin:50px 0; }
-
-.arch-desc {
-  color:#94a3b8;
-  margin-bottom:15px;
-}
-
+/* ===== ARCHITECTURE IMAGE SIZE FIX ===== */
 .arch-img {
   width:100%;
+  max-width:800px;   /* 👈 controls size */
+  display:block;
+  margin:20px auto;  /* 👈 center align */
   border-radius:10px;
   box-shadow:0 6px 16px rgba(0,0,0,0.4);
+}
+
+/* For project page diagrams */
+details.proj img {
+  width:100%;
+  max-width:800px;
+  display:block;
+  margin:20px auto;
+  border-radius:8px;
 }
 </style>
 
