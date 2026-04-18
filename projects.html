@@ -75,6 +75,52 @@ function toggleAllDetails() {
     d.open = anyClosed;
   });
 }
+/* ===== ARCHITECTURE IMAGE SIZE FIX ===== */
+.arch-img {
+  width:100%;
+  max-width:800px;   /* 👈 controls size */
+  display:block;
+  margin:20px auto;  /* 👈 center align */
+  border-radius:10px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.4);
+}
+
+/* For project page diagrams */
+details.proj img {
+  width:100%;
+  max-width:800px;
+  display:block;
+  margin:20px auto;
+  border-radius:8px;
+}
+  #lightbox {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+#lightbox img {
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+</script>
+  <script>
+function openLightbox(src) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = src;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
 </script>
 
 </head>
@@ -110,8 +156,7 @@ This set of projects focuses on modernizing IT Service Management through automa
 
 <h4>Architecture Overview</h4>
 
-<img src="assets/itsm-architecture.png" 
-     style="width:100%; border-radius:8px; margin:15px 0;">
+<img src="assets/itsm-architecture.png" onclick="openLightbox(this.src)" style="cursor:pointer;">
 
 <h4>Industry Context</h4>
 <p>Enterprises rely on ITSM platforms to deliver reliable and scalable IT services. However, traditional processes are often manual and inefficient.</p>
@@ -206,8 +251,7 @@ These projects focus on building intelligent IT operations with improved infrast
 
 <h4>Architecture Overview</h4>
 
-<img src="assets/itom-architecture.png" 
-     style="width:100%; border-radius:8px; margin:15px 0;">
+<img src="assets/itom-architecture.png" onclick="openLightbox(this.src)" style="cursor:pointer;">
 
 <h4>Industry Context</h4>
 <p>Organizations require real-time visibility into infrastructure and service dependencies to maintain operational stability.</p>
@@ -282,8 +326,7 @@ These projects focus on improving employee experience by automating HR service d
 
 <h4>Architecture Overview</h4>
 
-<img src="assets/hrsd-architecture.png" 
-     style="width:100%; border-radius:8px; margin:15px 0;">
+<img src="assets/hrsd-architecture.png" onclick="openLightbox(this.src)" style="cursor:pointer;">
 
 <h4>Industry Context</h4>
 <p>Employee experience plays a critical role in organizational productivity and retention.</p>
@@ -344,8 +387,7 @@ These projects focus on enhancing customer service through structured case manag
 
 <h4>Architecture Overview</h4>
 
-<img src="assets/csm-architecture.png" 
-     style="width:100%; border-radius:8px; margin:15px 0;">
+<img src="assets/csm-architecture.png" onclick="openLightbox(this.src)" style="cursor:pointer;">
 
 <h4>Industry Context</h4>
 <p>Customer experience is a key differentiator in modern enterprises.</p>
@@ -408,8 +450,7 @@ These projects focus on automating governance, risk, and compliance processes to
 
 <h4>Architecture Overview</h4>
 
-<img src="assets/grc-architecture.png" 
-     style="width:100%; border-radius:8px; margin:15px 0;">
+<img src="assets/grc-architecture.png" onclick="openLightbox(this.src)" style="cursor:pointer;">
 
 <h4>Industry Context</h4>
 <p>Organizations must maintain continuous compliance and proactive risk management.</p>
@@ -477,5 +518,8 @@ These projects focus on automating governance, risk, and compliance processes to
 </article>
 </div>
 </section>
+  <div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
 </div></section>
 </body></html>
