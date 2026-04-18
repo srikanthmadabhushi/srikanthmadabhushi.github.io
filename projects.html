@@ -93,7 +93,7 @@ details.proj img {
   margin:20px auto;
   border-radius:8px;
 }
-  #lightbox {
+ #lightbox {
   display:none;
   position:fixed;
   top:0;
@@ -109,17 +109,35 @@ details.proj img {
 #lightbox img {
   max-width:90%;
   max-height:90%;
-  border-radius:10px;
+}
+
+body.lightbox-open {
+  overflow:hidden;
 }
 </script>
-  <script>
+ <script>
 function openLightbox(src) {
   document.getElementById("lightbox").style.display = "flex";
   document.getElementById("lightbox-img").src = src;
+  document.body.classList.add("lightbox-open");
 }
 
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
+  document.body.classList.remove("lightbox-open");
+}
+</script>
+  <script>
+function toggleAllDetails() {
+  const details = document.querySelectorAll("details.proj");
+
+  // Check if ALL are open
+  const allOpen = Array.from(details).every(d => d.open);
+
+  // If all open → close all, else → open all
+  details.forEach(d => {
+    d.open = !allOpen;
+  });
 }
 </script>
 
