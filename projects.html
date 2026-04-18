@@ -13,6 +13,8 @@
   margin:10px 0 20px 0;
   max-width:800px;
 }
+
+/* Toggle Button */
 .toggle-btn {
   margin:20px 0;
   padding:10px 16px;
@@ -24,16 +26,47 @@
   font-weight:600;
 }
 
+/* Card Styling */
+.card {
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  transition:0.2s ease;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* Image */
 .card img {
   width:100%;
   border-radius:6px;
 }
 
+/* Title */
 .card h4 {
   margin:10px 0 5px;
 }
-</style>
-<script>
+
+/* Tag Base */
+.card .tag {
+  display:inline-block;
+  padding:4px 10px;
+  font-size:11px;
+  border-radius:20px;
+  margin-right:5px;
+  margin-bottom:6px;
+  margin-top:5px; /* 👈 spacing fix */
+  color:#fff;
+  font-weight:600;
+}
+
+/* Tag Variants */
+.tag.top { background:#22c55e; }
+.tag.ai { background:#6366f1; }
+.tag.auto { background:#f59e0b; }
+.tag.aiops { background:#ef4444; }
+
+</style><script>
 function toggleAllDetails() {
   const details = document.querySelectorAll("details.proj");
   const anyClosed = Array.from(details).some(d => !d.open);
@@ -75,6 +108,11 @@ This set of projects focuses on modernizing IT Service Management through automa
 <details class="proj">
 <summary><strong>View Architecture, Problem & AI Approach</strong></summary>
 
+<h4>Architecture Overview</h4>
+
+<img src="assets/itsm-architecture.png" 
+     style="width:100%; border-radius:8px; margin:15px 0;">
+
 <h4>Industry Context</h4>
 <p>Enterprises rely on ITSM platforms to deliver reliable and scalable IT services. However, traditional processes are often manual and inefficient.</p>
 
@@ -92,56 +130,62 @@ This set of projects focuses on modernizing IT Service Management through automa
 <div class='grid grid-3'>
 
 <article class='card'>
+<span class="tag top">Top Project</span>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
 <img src='assets/itsm1.png'><h4>ServiceNow_ITSM_Project1</h4>
-<p>Enterprise-grade ITSM implementation focused on automation and workflow excellence.</p>
+<p>Focused on automating incident lifecycle management to improve response time and service efficiency.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project1'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm2.png'><h4>ServiceNow_ITSM_Project2</h4>
-<p>Focused on automation-driven workflows to improve efficiency and service quality.</p>
+<p>Designed to streamline service request workflows using structured automation and approval mechanisms.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project2'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm3.png'><h4>ServiceNow_ITSM_Project3</h4>
-<p>Designed to streamline enterprise service operations with scalable configurations.</p>
+<p>Built to enhance change management processes with controlled workflows and risk-based approvals.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project3'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm4.png'><h4>ServiceNow_ITSM_Project4</h4>
-<p>Built to enhance workflow efficiency and improve service delivery performance.</p>
+<p>Implemented knowledge-driven support workflows to reduce resolution time for recurring issues.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project4'>View Repo</a>
 </article>
 
 <article class='card'>
+<span class="tag top">Top Project</span>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
 <img src='assets/itsm5.png'><h4>ServiceNow_ITSM_Project5</h4>
-<p>Focused on automation-driven workflows to improve efficiency and service quality.</p>
+<p>Optimized incident prioritization and routing to ensure faster resolution and SLA compliance.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project5'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm6.png'><h4>ServiceNow_ITSM_Project6</h4>
-<p>Designed to streamline enterprise service operations with scalable configurations.</p>
+<p>Developed scalable service catalog workflows for efficient request fulfillment and tracking.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project6'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm7.png'><h4>ServiceNow_ITSM_Project7</h4>
-<p>Built to enhance workflow efficiency and improve service delivery performance.</p>
+<p>Improved problem management processes by identifying root causes and reducing recurring incidents.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project7'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm8.png'><h4>ServiceNow_ITSM_Project8</h4>
-<p>Enterprise-grade ITSM implementation focused on automation and workflow excellence.</p>
+<p>Enhanced service delivery by integrating automated workflows across multiple ITSM processes.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project8'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itsm9.png'><h4>ServiceNow_ITSM_Project9</h4>
-<p>Designed to streamline enterprise service operations with scalable configurations.</p>
+<p>Strengthened ITSM operations by implementing structured workflows for consistent service delivery.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITSM_Project9'>View Repo</a>
 </article>
 
@@ -160,6 +204,11 @@ These projects focus on building intelligent IT operations with improved infrast
 <details class="proj">
 <summary><strong>View Architecture, Problem & AI Approach</strong></summary>
 
+<h4>Architecture Overview</h4>
+
+<img src="assets/itom-architecture.png" 
+     style="width:100%; border-radius:8px; margin:15px 0;">
+
 <h4>Industry Context</h4>
 <p>Organizations require real-time visibility into infrastructure and service dependencies to maintain operational stability.</p>
 
@@ -177,38 +226,41 @@ These projects focus on building intelligent IT operations with improved infrast
 <div class='grid grid-3'>
 
 <article class='card'>
+<span class="tag top">Top Project</span>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
 <img src='assets/itom1.png'><h4>ServiceNow_ITOM_Project1</h4>
-<p>Enterprise-grade ITOM implementation focused on automation and workflow excellence.</p>
+<p>Focused on improving infrastructure visibility through CMDB and service mapping implementation.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITOM_Project1'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itom2.png'><h4>ServiceNow_ITOM_Project2</h4>
-<p>Enterprise-grade ITOM implementation focused on automation and workflow excellence.</p>
+<p>Designed event management workflows to reduce alert noise and improve incident response time.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITOM_Project2'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itom4.png'><h4>ServiceNow_ITOM_Project4</h4>
-<p>Enterprise-grade ITOM implementation focused on automation and workflow excellence.</p>
+<p>Built automated discovery processes to maintain accurate and up-to-date configuration data.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITOM_Project4'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itom5.png'><h4>ServiceNow_ITOM_Project5</h4>
-<p>Enterprise-grade ITOM implementation focused on automation and workflow excellence.</p>
+<p>Enhanced service mapping to identify dependencies and improve impact analysis.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITOM_Project5'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itom7.png'><h4>ServiceNow_ITOM_Project7</h4>
-<p>Enterprise-grade ITOM implementation focused on automation and workflow excellence.</p>
+<p>Implemented monitoring workflows to proactively detect and resolve infrastructure issues.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITOM_Project7'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/itom8.png'><h4>ServiceNow_ITOM_Project8</h4>
-<p>Enterprise-grade ITOM implementation focused on automation and workflow excellence.</p>
+<p>Developed integration-based solutions for real-time event correlation and operational insights.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_ITOM_Project8'>View Repo</a>
 </article>
 
@@ -228,6 +280,11 @@ These projects focus on improving employee experience by automating HR service d
 <details class="proj">
 <summary><strong>View Architecture, Problem & AI Approach</strong></summary>
 
+<h4>Architecture Overview</h4>
+
+<img src="assets/hrsd-architecture.png" 
+     style="width:100%; border-radius:8px; margin:15px 0;">
+
 <h4>Industry Context</h4>
 <p>Employee experience plays a critical role in organizational productivity and retention.</p>
 
@@ -246,25 +303,28 @@ These projects focus on improving employee experience by automating HR service d
 
 <article class='card'>
 <img src='assets/hrsd1.png'><h4>ServiceNow_HRSD_Project1</h4>
-<p>Enterprise-grade HRSD implementation focused on automation and workflow excellence.</p>
+<p>Streamlined HR case management workflows to improve employee service delivery and response time.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_HRSD_Project1'>View Repo</a>
 </article>
 
 <article class='card'>
+<span class="tag top">Top Project</span>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
 <img src='assets/hrsd2.png'><h4>ServiceNow_HRSD_Project2</h4>
-<p>Enterprise-grade HRSD implementation focused on automation and workflow excellence.</p>
+<p>Designed lifecycle event automation to support onboarding, transfers, and offboarding processes.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_HRSD_Project2'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/hrsd3.png'><h4>ServiceNow_HRSD_Project3</h4>
-<p>Enterprise-grade HRSD implementation focused on automation and workflow excellence.</p>
+<p>Built employee self-service capabilities using knowledge base and service portal enhancements.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_HRSD_Project3'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/hrsd4.png'><h4>ServiceNow_HRSD_Project4</h4>
-<p>Enterprise-grade HRSD implementation focused on automation and workflow excellence.</p>
+<p>Improved HR operations by automating repetitive tasks and standardizing workflows.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_HRSD_Project4'>View Repo</a>
 </article>
 </div></section>
@@ -281,6 +341,11 @@ These projects focus on enhancing customer service through structured case manag
 
 <details class="proj">
 <summary><strong>View Architecture, Problem & AI Approach</strong></summary>
+
+<h4>Architecture Overview</h4>
+
+<img src="assets/csm-architecture.png" 
+     style="width:100%; border-radius:8px; margin:15px 0;">
 
 <h4>Industry Context</h4>
 <p>Customer experience is a key differentiator in modern enterprises.</p>
@@ -299,26 +364,29 @@ These projects focus on enhancing customer service through structured case manag
 <div class='grid grid-3'>
 
 <article class='card'>
+<span class="tag top">Top Project</span>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
 <img src='assets/csm1.png'><h4>ServiceNow_CSM_Project1</h4>
-<p>Enterprise-grade CSM implementation focused on automation and workflow excellence.</p>
+<p>Optimized customer case management workflows to improve response time and service efficiency.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_CSM_Project1'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/csm2.png'><h4>ServiceNow_CSM_Project2</h4>
-<p>Enterprise-grade CSM implementation focused on automation and workflow excellence.</p>
+<p>Designed automated routing mechanisms to ensure faster resolution of customer issues.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_CSM_Project2'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/csm3.png'><h4>ServiceNow_CSM_Project3</h4>
-<p>Enterprise-grade CSM implementation focused on automation and workflow excellence.</p>
+<p>Implemented SLA-based workflows to enhance service delivery and customer satisfaction.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_CSM_Project3'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/csm4.png'><h4>ServiceNow_CSM_Project4</h4>
-<p>Enterprise-grade CSM implementation focused on automation and workflow excellence.</p>
+<p>Built structured customer interaction processes to improve visibility and communication.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_CSM_Project4'>View Repo</a>
 </article>
 
@@ -338,6 +406,11 @@ These projects focus on automating governance, risk, and compliance processes to
 <details class="proj">
 <summary><strong>View Architecture, Problem & AI Approach</strong></summary>
 
+<h4>Architecture Overview</h4>
+
+<img src="assets/grc-architecture.png" 
+     style="width:100%; border-radius:8px; margin:15px 0;">
+
 <h4>Industry Context</h4>
 <p>Organizations must maintain continuous compliance and proactive risk management.</p>
 
@@ -356,47 +429,50 @@ These projects focus on automating governance, risk, and compliance processes to
 
 <article class='card'>
 <img src='assets/grc1.png'><h4>ServiceNow_GRC_Project1</h4>
-<p>Enterprise-grade GRC implementation focused on automation and workflow excellence.</p>
+<p>Focused on automating risk assessment workflows to improve visibility and decision-making.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project1'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/grc2.png'><h4>ServiceNow_GRC_Project2</h4>
-<p>Enterprise-grade GRC implementation focused on automation and workflow excellence.</p>
+<p>Designed compliance tracking solutions to ensure adherence to regulatory requirements.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project2'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/grc3.png'><h4>ServiceNow_GRC_Project3</h4>
-<p>Enterprise-grade GRC implementation focused on automation and workflow excellence.</p>
+<p>Built audit management workflows to streamline audit preparation and execution.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project3'>View Repo</a>
 </article>
 
 <article class='card'>
+<span class="tag top">Top Project</span>
+<span class="tag ai">AI</span>
+<span class="tag auto">Automation</span>
 <img src='assets/grc4.png'>
 <h4>ServiceNow_GRC_Project4</h4>
-<p>Advanced GRC automation designed to streamline policy, control, and compliance workflows across the enterprise.</p>
+<p>Enhanced policy management processes with structured approvals and lifecycle tracking.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project4'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/grc5.png'>
 <h4>ServiceNow_GRC_Project5</h4>
-<p>Compliance workflow automation enabling continuous monitoring, streamlined evidence collection, and audit optimization.</p>
+<p>Implemented vendor risk workflows to monitor and manage third-party risks effectively.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project5'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/grc6.webp'>
 <h4>ServiceNow_GRC_Project6</h4>
-<p>Enterprise risk management automation with dynamic scoring, mitigation workflows, and real-time visibility.</p>
+<p>Developed risk scoring models to prioritize and manage enterprise risks proactively.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project6'>View Repo</a>
 </article>
 
 <article class='card'>
 <img src='assets/grc7.webp'>
 <h4>ServiceNow_GRC_Project7</h4>
-<p>Vendor Risk Management automation with assessments, tiering models, and remediation workflows.</p>
+<p>Improved governance processes by automating controls and compliance monitoring.</p>
 <a class='btn' target='_blank' href='https://github.com/SrikanthMadabhushi/ServiceNow_GRC_Project7'>View Repo</a>
 </article>
 </div>
