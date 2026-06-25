@@ -61,7 +61,7 @@ img,svg{max-width:100%;height:auto;display:block}
   border-radius:14px;
   border:1px solid #123;
   object-fit:cover;
-  object-position:center;
+  object-position:center top;
   animation:heroFloat 9s ease-in-out infinite, softGlow 9s ease-in-out infinite;
   transform-origin:center;
 }
@@ -167,7 +167,7 @@ p{font-size:clamp(14px, 2.4vw, 16px);line-height:1.6;color:var(--muted);margin:6
   border-radius:14px;
   border:1px solid #123;
   object-fit:cover;
-  object-position:center;
+  object-position:center top;
   animation:heroFloat 10s ease-in-out infinite, softGlow 10s ease-in-out infinite;
 }
 
