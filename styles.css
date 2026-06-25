@@ -55,13 +55,13 @@ img,svg{max-width:100%;height:auto;display:block}
 
 /* hero */
 .hero{
-  padding:clamp(4px,1.2vw,10px) 0 4px;
+  padding:clamp(10px,1.8vw,18px) 0 4px;
   max-width:1320px;
   margin-inline:auto;
 }
 .hero img{
   width:100%;
-  max-height:300px;
+  max-height:280px;
   height:auto;
   border-radius:14px;
   border:1px solid #123;
@@ -166,7 +166,7 @@ p{font-size:clamp(14px, 2.4vw, 16px);line-height:1.6;color:var(--muted);margin:6
 
 .banner{
   width:100%;
-  max-height:300px;
+  max-height:280px;
   height:auto;
   border-radius:14px;
   border:1px solid #123;
@@ -192,12 +192,12 @@ p{font-size:clamp(14px, 2.4vw, 16px);line-height:1.6;color:var(--muted);margin:6
   }
 
   .hero{
-    padding:6px 0 2px;
+    padding:10px 0 2px;
   }
 
   .hero img,
   .banner{
-    max-height:220px;
+    max-height:200px;
   }
 }
 
