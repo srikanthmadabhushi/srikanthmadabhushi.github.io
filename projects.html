@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ServiceNow and AI project portfolio covering ITSM, ITOM, HRSD, CSM, and GRC workflow automation and enterprise architecture.">
 <title>Projects</title>
 <link rel="stylesheet" href="styles.css">
 
@@ -66,15 +68,8 @@
 .tag.auto { background:#f59e0b; }
 .tag.aiops { background:#ef4444; }
 
-</style><script>
-function toggleAllDetails() {
-  const details = document.querySelectorAll("details.proj");
-  const anyClosed = Array.from(details).some(d => !d.open);
-
-  details.forEach(d => {
-    d.open = anyClosed;
-  });
-}
+</style>
+<style>
 /* ===== ARCHITECTURE IMAGE SIZE FIX ===== */
 .arch-img {
   width:100%;
@@ -115,29 +110,44 @@ details.proj img {
 body.lightbox-open {
   overflow:hidden;
 }
-</script>
- <script>
+@media (max-width:768px) {
+  .top-nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    padding:16px;
+  }
+
+  .toggle-btn {
+    width:100%;
+  }
+}
+</style>
+<script>
 function openLightbox(src) {
-  document.getElementById("lightbox").style.display = "flex";
-  document.getElementById("lightbox-img").src = src;
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-img");
+  if (!lightbox || !lightboxImage) return;
+
+  lightbox.style.display = "flex";
+  lightboxImage.src = src;
   document.body.classList.add("lightbox-open");
 }
 
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
+  const lightbox = document.getElementById("lightbox");
+  if (!lightbox) return;
+
+  lightbox.style.display = "none";
   document.body.classList.remove("lightbox-open");
 }
-</script>
-  <script>
+
 function toggleAllDetails() {
   const details = document.querySelectorAll("details.proj");
-
-  // Check if ALL are open
-  const allOpen = Array.from(details).every(d => d.open);
-
-  // If all open → close all, else → open all
-  details.forEach(d => {
-    d.open = !allOpen;
+  const allOpen = Array.from(details).every((detail) => detail.open);
+  details.forEach((detail) => {
+    detail.open = !allOpen;
   });
 }
 </script>
@@ -150,7 +160,7 @@ function toggleAllDetails() {
 <a href='index.html'>Home</a>
 <a href='projects.html'>Projects</a>
 <a href='future.html'>Future 2025–2030</a>
-<a href='Insights.html'>Insights</a>
+<a href='insights.html'>Insights</a>
 <a href='contact.html'>Contact</a>
 </nav>
 

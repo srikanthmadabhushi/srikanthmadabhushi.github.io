@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AI insights and thought leadership articles by Srikanth Madabhushi across enterprise AI, ServiceNow automation, governance, and workflow orchestration.">
 <title>Insights </title>
 <link rel="stylesheet" href="styles.css">
 
@@ -33,6 +34,11 @@
 
 @media(max-width:768px){
   .blog-grid{grid-template-columns:1fr;}
+  .top-menu ul{
+    flex-wrap:wrap;
+    gap:12px;
+    padding:0 16px;
+  }
 }
 
 .blog-card{
@@ -118,7 +124,7 @@
 <li><a href="index.html">Home</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="future.html">Future 2025–2030</a></li>
-<li><a href="blog.html" class="active">Insights</a></li>
+<li><a href="insights.html" class="active">Insights</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
@@ -131,13 +137,17 @@
 </div>
 
 <div class="tabs">
-<button class="active" onclick="showTab('svj')">SVJ</button>
-<button onclick="showTab('aij')">AI Journal</button>
-<button onclick="showTab('entech')">ENTECH</button>
+<button class="active" onclick="showTab('svj', this)">SVJ</button>
+<button onclick="showTab('aij', this)">AI Journal</button>
+<button onclick="showTab('entech', this)">ENTECH</button>
 </div>
 
 <!-- ================= SVJ (8) ================= -->
 <div id="svj" class="blog-grid active">
+
+<div class="blog-card"><span class="tag">SVJ</span>
+<a target="_blank" href="https://siliconvalleysjournal.com/2026/05/11/from-compliance-to-intelligence-ai-driven-risk-assessment-and-proactive-governance-in-modern-enterprises/">Risk Assessment & Governance ↗</a>
+<p class="blog-desc">Explores AI-driven risk assessment and proactive governance models. Strengthens scalable compliance operations and enterprise decision support.</p></div>
 
 <div class="blog-card"><span class="tag">SVJ</span>
 <a target="_blank" href="https://siliconvalleysjournal.com/2026/04/02/from-signals-to-support-ai-driven-employee-sentiment-monitoring-and-proactive-hr-intervention/">Employee Sentiment Monitoring ↗</a>
@@ -177,6 +187,10 @@
 <div id="aij" class="blog-grid">
 
 <div class="blog-card"><span class="tag">AI JOURNAL</span>
+<a target="_blank" href="https://aijourn.com/ai-driven-risk-assessment-compliance-automation-a-framework-for-scalable-governance-operations/">Risk Assessment & Compliance Automation ↗</a>
+<p class="blog-desc">Presents a framework for AI-driven risk assessment and compliance automation. Supports scalable governance operations with more proactive controls.</p></div>
+
+<div class="blog-card"><span class="tag">AI JOURNAL</span>
 <a target="_blank" href="https://aijourn.com/a-multi-layer-autonomous-enterprise-brain-for-intelligent-workflow-orchestration/">Enterprise Brain ↗</a>
 <p class="blog-desc">Introduces a multi-layer AI enterprise brain model. Enables intelligent workflow orchestration at scale.</p></div>
 
@@ -208,10 +222,18 @@
 <a target="_blank" href="https://aijourn.com/ai-augmented-employee-onboarding-orchestration-a-modern-framework-for-hr-service-delivery/">AI Employee Onboarding ↗</a>
 <p class="blog-desc">AI-augmented onboarding framework for cross-team coordination. Enables scalable and consistent employee onboarding experiences.</p></div>
 
+<div class="blog-card"><span class="tag">AI JOURNAL</span>
+<a target="_blank" href="https://aijourn.com/ai-driven-employee-case-triage-knowledge-recommendation-a-scalable-framework-for-intelligent-hr-service-delivery/">Employee Case Triage & Knowledge Recommendation ↗</a>
+<p class="blog-desc">Explores AI-driven employee case triage and knowledge recommendation. Improves HR service delivery with smarter routing and faster support outcomes.</p></div>
+
 </div>
 
 <!-- ================= ENTECH (6) ================= -->
 <div id="entech" class="blog-grid">
+
+<div class="blog-card"><span class="tag">ENTECH</span>
+<a target="_blank" href="https://entechonline.com/ai-powered-service-discovery/">AI-Powered Service Discovery ↗</a>
+<p class="blog-desc">Covers AI-powered service discovery approaches for better enterprise visibility. Supports more accurate mapping, context, and operational awareness.</p></div>
 
 <div class="blog-card"><span class="tag">ENTECH</span>
 <a target="_blank" href="https://entechonline.com/ai-knowledge-recommender/">Knowledge Recommender ↗</a>
@@ -230,6 +252,10 @@
 <p class="blog-desc">Focuses on AI in education systems. Encourages innovation among students.</p></div>
 
 <div class="blog-card"><span class="tag">ENTECH</span>
+<a target="_blank" href="https://entechonline.com/future-of-ai-in-enterprise-service-management-for-students/">Future of AI in Enterprise Service Management ↗</a>
+<p class="blog-desc">Introduces students to the future of AI in enterprise service management. Connects intelligent workflows, automation, and career-ready use cases.</p></div>
+
+<div class="blog-card"><span class="tag">ENTECH</span>
 <a target="_blank" href="https://entechonline.com/ai-powered-categorization-for-problem-solving/">AI Categorization ↗</a>
 <p class="blog-desc">AI classification models for problem solving. Improves accuracy and efficiency.</p></div>
 
@@ -243,11 +269,11 @@
 </div>
 
 <script>
-function showTab(tab){
+function showTab(tab, button){
 document.querySelectorAll('.blog-grid').forEach(el=>el.classList.remove('active'));
 document.querySelectorAll('.tabs button').forEach(btn=>btn.classList.remove('active'));
 document.getElementById(tab).classList.add('active');
-event.target.classList.add('active');
+button.classList.add('active');
 }
 </script>
 
